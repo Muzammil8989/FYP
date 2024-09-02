@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 240, 100%, 98%; /* Light background (off-white) */
+    --foreground: 241, 82%, 17%; /* Dark text */
+
+    --card: 255, 255, 255; /* White card */
+    --card-foreground: 241, 82%, 17%; /* Dark text for cards */
+
+    --popover: 255, 255, 255; /* White popover */
+    --popover-foreground: 241, 82%, 17%; /* Dark text for popover */
+
+    --primary: 205, 70%, 40%; /* Attractive teal */
+    --primary-foreground: 255, 255, 255; /* White text for primary buttons */
+
+    --secondary: 330, 70%, 50%; /* Warm coral */
+    --secondary-foreground: 255, 255, 255; /* White text for secondary */
+
+    --muted: 210, 20%, 95%; /* Light gray for muted elements */
+    --muted-foreground: 240, 10%, 20%; /* Dark text for muted areas */
+
+    --accent: 50, 100%, 50%; /* Bright yellow for accents */
+    --accent-foreground: 241, 82%, 17%; /* Dark text for accent buttons */
+
+    --destructive: 0, 85%, 50%; /* Bright red for destructive actions */
+    --destructive-foreground: 255, 255, 255; /* White text for destructive actions */
+
+    --border: 220, 20%, 90%; /* Light border color */
+    --input: 240, 10%, 95%; /* Light input background */
+    --ring: 205, 70%, 50%; /* Ring color matching primary */
+
+    --radius: 0.5rem; /* Border radius */
+  }
+
+  .dark {
+    body {
+      background-image: linear-gradient(
+        255deg,
+        hsl(249deg 56% 44%) 0%,
+        hsl(249deg 59% 43%) 0%,
+        hsl(249deg 62% 43%) 1%,
+        hsl(249deg 65% 42%) 4%,
+        hsl(249deg 69% 42%) 8%,
+        hsl(249deg 64% 44%) 14%,
+        hsl(249deg 54% 50%) 22%,
+        hsl(249deg 59% 55%) 32%,
+        hsl(249deg 64% 61%) 42%,
+        hsl(249deg 72% 66%) 53%,
+        hsl(249deg 72% 67%) 63%,
+        hsl(249deg 72% 67%) 73%,
+        hsl(249deg 72% 67%) 81%,
+        hsl(249deg 72% 68%) 88%,
+        hsl(249deg 73% 67%) 93%,
+        hsl(249deg 74% 64%) 97%,
+        hsl(249deg 75% 62%) 99%,
+        hsl(249deg 76% 59%) 100%,
+        hsl(249deg 77% 56%) 100%
+      );
+    }
+
+    --foreground: 210, 80%, 90%; /* Light text */
+
+    --card: 210, 30%, 25%; /* Dark card with bluish tint */
+    --card-foreground: 210, 80%, 90%; /* Light text for dark cards */
+
+    --popover: 210, 30%, 25%; /* Dark popover with bluish tint */
+    --popover-foreground: 210, 80%, 90%; /* Light text for popover */
+
+    --primary: 200, 100%, 60%; /* Bluish teal for primary in dark mode */
+    --primary-foreground: 255, 255, 255; /* White text for primary buttons */
+
+    --secondary: 270, 100%, 60%; /* Light blue for secondary in dark mode */
+    --secondary-foreground: 210, 80%, 90%; /* Light text for secondary */
+
+    --muted: 210, 20%, 30%; /* Dark muted background */
+    --muted-foreground: 210, 80%, 90%; /* Light text for muted areas */
+
+    --accent: 50, 100%, 60%; /* Bright yellow for accents in dark mode */
+    --accent-foreground: 210, 30%, 10%; /* Dark text for accent buttons */
+
+    --destructive: 0, 80%, 50%; /* Dark red for destructive actions */
+    --destructive-foreground: 210, 80%, 90%; /* Light text for destructive actions */
+
+    --border: 210, 40%, 30%; /* Dark border color */
+    --input: 210, 30%, 20%; /* Dark input background */
+    --ring: 200, 100%, 60%; /* Light ring color matching primary */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
