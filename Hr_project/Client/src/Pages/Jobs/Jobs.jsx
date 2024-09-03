@@ -3,7 +3,7 @@ import JobDetailCard from "@/components/my_component/jobsCard/JobDetailCard";
 import SearchBar from "@/components/my_component/searchBar/searchBar";
 import TimeDate from "@/components/my_component/TimeDate/timedate";
 import { Button } from "@/components/ui/button";
-import JobCreationModal from "@/components/Forms/JobCreationModal";
+import JobCreationModal from "@/components/my_component/candidateStepper/Forms/JobCreationModal";
 import { jobs } from "@/fakeData/jobData";
 
 function Jobs() {

@@ -39,6 +39,10 @@ const JobSchema = new mongoose.Schema(
       type: Date,
       default: Date.now,
     },
+    resume: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Resume", // Reference to Resume model
+    },
   },
   {
     timestamps: true,

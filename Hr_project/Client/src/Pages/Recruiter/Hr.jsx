@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons"; 
 import Dashboard from "../Dashboard/Dashboard";
 import Jobs from "../Jobs/Jobs";
+import Setting from "../Setting/Setting";
 
 function Hr() {
   const [collapsed, setCollapsed] = useState(false);
@@ -56,7 +57,7 @@ const renderContent = (selectedKey) => {
     case "3":
       return <Dashboard />;
     case "4":
-      return <Dashboard />;
+      return <Setting />;
     default:
       return <Dashboard />;
   }
